@@ -1,0 +1,67 @@
+.newsletter {
+    &__bg {
+        background-color: var(--first-color);
+        padding: 3rem 1.5rem;
+        text-align: center;
+        row-gap: 2.5rem;
+    }
+
+    &__title,
+    &__text {
+        color: var(--black-color);
+    }
+
+    &__title {
+        font-size: var(--h1-font-size);
+        margin-bottom: 1.5rem;
+    }
+
+    &__subscribe {
+        display: flex;
+        flex-direction: column;
+        row-gap: .75rem;
+    }
+
+    &__input {
+        border: none;
+        outline: none;
+        background-color: hsl(0, 0%, 94%);
+        padding: 1.25rem 1rem;
+        color: var(--black-color);
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: var(--black-color);
+        color: var(--white-color);
+        padding: 1.25rem 2rem;
+        border-radius: 0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: var(--black-color-lighten);
+        }
+    }
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (min-width: 767px) {
+    .newsletter {
+        &__bg {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            text-align: initial;
+            column-gap: 2rem;
+            padding: 4.5rem;
+        }
+
+        &__subscribe {
+            flex-direction: row;
+        }
+
+        &__input {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <title>Sky Hookah Distribution</title>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js" defer></script>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo">
+                    <img src="images/logo-cut.png" alt="logo image">
+                </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="dropdown__item">
+                        <div class="nav__link-dropdown">
+                           Stuff <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+   
+                        <ul class="nav__item dropdown__menu">
+                           <li class="dropdown__items">
+                                <a href="#stuff" class="dropdown__link">
+                                    <img src="images/icons/hookah.png" alt="nav image"> 
+                                    Hookahs
+                                </a>                          
+                           </li>
+   
+                           <li class="dropdown__items">
+                                <a href="#stuff" class="dropdown__link">
+                                    <img src="images/icons/shisha.png" alt="nav image">
+                                    Shisha
+                                </a>
+                           </li>
+   
+                           <li class="dropdown__items">
+                                <a href="#stuff" class="dropdown__link">
+                                    <img src="images/icons/charcoal.png" alt="nav image"> 
+                                    Charcoal
+                                </a>
+                            </li>
+
+                            <li class="dropdown__items">
+                                <a href="#stuff" class="dropdown__link">
+                                    <img src="images/icons/accessories.png" alt="nav image">
+                                    Accessories
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__btns">
+                <i class="ri-user-line nav__user"></i>
+                <i class="ri-shopping-bag-line nav__shop" id="cart-shop"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-fill nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cart" id="cart">
+        <i class="ri-close-line cart__close" id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="images/new-2.png" alt="cart image" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">MattPear Simple S Pro</h3>
+                    <span class="cart__price">$280</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="ri-subtract-line"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="ri-add-line"></i>
+                            </span>
+                        </div>
+
+                        <i class="ri-delete-bin-7-line cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="images/hp-charcoal.png" alt="cart image" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Shaman premium coconut coal</h3>
+                    <span class="cart__price"><span>$13,99</span>$12,99</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class="ri-subtract-line"></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class="ri-add-line"></i>
+                            </span>
+                        </div>
+
+                        <i class="ri-delete-bin-7-line cart__amount-trash"></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">2 items</span>
+            <span class="cart__prices-total">$292,99</span>
+        </div>
+    </div>
+
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <img src="images/hookah-home.png" alt="home image" class="home__img">
+
+                <div class="home__data">
+                    <span class="home__subtitle">Best quality guarantee</span>
+                    <h1 class="home__title">
+                        World class hookahs
+                    </h1>
+
+                    <p class="home__text">
+                        Premium quality hookahs <br>
+                        Get the most flavour out of your tobacco
+                    </p>
+
+                    <a href="#" class="button">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <span class="section__subtitle">About Us</span>
+                    <h2 class="section__title">We Provide</h2>
+                    <p class="about__text">
+                        We are the highly professional team of adherents based on principles of an 
+                        openness, respect and trust, aimed at an establishment of long relations 
+                        with customers for the satisfaction of their needs.
+                    </p>
+
+                    <a href="#" class="button about__button">
+                        Read More
+                    </a>
+                </div>
+
+                <img src="images/hookah-about.png" alt="about image" class="about__img">
+            </div>
+        </section>
+
+        <section class="stuff section" id="stuff">
+            <div class="stuff__data">
+                <span class="section__subtitle">The Best Stuff</span>
+                <h2 class="section__title">Our products</h2>
+            </div>
+
+            <div class="stuff__container container grid">
+                <article class="stuff__card">
+                    <img src="images/hp-hookah.png" alt="stuff image" class="stuff__img">
+                    
+                    <h3 class="stuff__name">Hookahs</h3>
+                </article>
+
+                <article class="stuff__card">
+                    <img src="images/hp-shisha.png" alt="stuff image" class="stuff__img">
+                    
+                    <h3 class="stuff__name">Shisha</h3>
+                </article>
+
+                <article class="stuff__card">
+                    <img src="images/hp-charcoal.png" alt="stuff image" class="stuff__img">
+                    
+                    <h3 class="stuff__name">Charcoal</h3>
+                </article>
+
+                <article class="stuff__card">
+                    <img src="images/hp-accessories.png" alt="stuff image" class="stuff__img">
+                    
+                    <h3 class="stuff__name">Accessories</h3>
+                </article>
+            </div>
+        </section>
+
+        <section class="new section container" id="new">
+            <div class="new__data">
+                <span class="section__subtitle">Just try this</span>
+                <h2 class="section__title">New arrivals</h2>
+            </div>
+            
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="images/new-1.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">DON TURKISH</h3>
+                                <span class="new__price">$22</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="images/new-2.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">MattPear Simple S Pro</h3>
+                                <span class="new__price">$280</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="images/new-3.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Sunpipe Premium per...</h3>
+                                <span class="new__price">$40</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="images/new-4.png" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Alpha Hookah</h3>
+                                <span class="new__price">$229</span>
+                            </div>
+    
+                            <button class="button new__button">ADD TO CART</button>
+                        </article>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                    <p class="newsletter__text">
+                        Don't miss out on your discounts. Subscribe to our email 
+                        newsletter to get the best offers, discounts, coupons, 
+                        gifts and much more.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button newsletter__button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#home" class="footer__logo">
+                    <img src="images/logo.png" alt="logo image">
+                </a>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">Main</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">About</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Hookahs</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Other</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Information</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Contact</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Order & Returns</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Videos</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Address</h3>
+
+                    <ul class="footer__links">
+                        <li class="footer__information">
+                            1371 Industrial Dr, <br>
+                            Unit L, Itasca, IL 60143
+                        </li>
+
+                        <li class="footer__information">
+                            9AM - 11PM
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">Social Media</h3>
+
+                    <ul class="footer__social">
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-circle-line"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="#" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-line"></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy container">
+                &#169; Copyright. All rights reserved
+            </span>
+        </div>
+    </footer>
+
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+</body>
+</html>

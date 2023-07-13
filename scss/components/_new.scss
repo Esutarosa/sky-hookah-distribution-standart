@@ -1,0 +1,97 @@
+.new {
+    &__card {
+        position: relative;
+        text-align: center;
+        background-color: var(--black-color);
+        overflow-y: hidden;
+        padding-top: 2rem;
+        transition: .3s;
+    }
+
+    &__tag {
+        background-color: var(--first-color);
+        color: var(--black-color);
+        padding: .5rem 1rem;
+        text-transform: uppercase;
+        font-size: var(--small-font-size);
+        font-weight: var(--font-medium);
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        transition: .3s;
+    }
+
+    &__img {
+        width: 215px;
+        margin-bottom: 1rem;
+    }
+
+    &__title,
+    &__price {
+        text-transform: uppercase;
+        margin-bottom: .75rem;
+    }
+
+    &__price {
+        display: block;
+        color: var(--first-color);
+        transition: .3s;
+    }
+
+    &__button {
+        cursor: pointer;
+        font-size: var(--small-font-size);
+        background-color: var(--black-color);
+        color: var(--white-color);
+        transform: translateY(1rem);
+        border-radius: 0;
+        opacity: 0;
+
+        &:hover {
+            background-color: var(--black-color-lighten);
+        }
+    }
+
+    &__card:hover {
+        background-color: var(--first-color);
+        box-shadow: 0 12px 32px hsla(0, 0%, 20%, .1);
+        padding: 2rem 0 3rem 0;
+    }
+
+    &__card:hover &__tag {
+        color: var(--white-color);
+        background-color: var(--black-color);
+    }
+
+    &__card:hover &__button {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    &__card:hover &__title,
+    &__card:hover &__price {
+        color: var(--black-color);
+    }
+
+    &__card:hover &__price {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (min-width: 767px) {
+    .new {
+        &__price {
+            font-size: var(--normal-font-size);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .new {
+        &__container {
+            padding-top: 2rem;
+        }
+    }
+}

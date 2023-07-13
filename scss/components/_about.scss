@@ -1,0 +1,53 @@
+.about {
+    &__container {
+        row-gap: 3rem;
+    }
+
+    &__data {
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 1.5rem;
+    }
+
+    &__img {
+        width: 300px;
+        justify-self: center;
+    }
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+@media screen and (max-width: 576px) {
+    .about {
+        &__container {
+            grid-template-columns: .7fr;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about {
+        &__container {
+            grid-template-columns: 450px 360px;
+            align-items: center;
+            column-gap: 7rem;
+        }
+
+        &__data {
+            order: 1;
+        }
+
+        &__data .section__subtitle,
+        &__data .section__title,
+        &__data {
+            text-align: initial;
+        }
+
+        &__img {
+            width: 450px;
+        }
+    }
+}
